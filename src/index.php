@@ -10,6 +10,7 @@ if (is_null($json)) {
   exit;
 }
 
+// replace data with the first item in the data array
 try {
   $json->data = $json->data[0];
 } catch(Exception $e) {
