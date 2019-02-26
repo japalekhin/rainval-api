@@ -18,5 +18,9 @@ try {
   exit;
 }
 
-// print out final data
+// convert to json string and print final data
+echo json_encode($json);
+exit;
+
+// print out final data (for debugging)
 echo '<pre>' . print_r($json, true) . '</pre>';
