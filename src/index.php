@@ -1,4 +1,6 @@
 <?php
+// let the accessing client know that this script prints out json data
+header('Content-Type: application/json');
 
 // retrieve json string from upper api
 $source = file_get_contents('http://weather.asti.dost.gov.ph/web-api/index.php/api/data/1520');
